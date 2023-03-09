@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythology Made Easy</title>
+    <!--Favicon to be displayed at top of page-->
+    <link rel="icon" type="image/x-icon" href="../sources/fonts&icons/MEfavicon.ico">
+    <link rel="stylesheet" href="../css/general.css"> 
+</head>
+<body>
+    <header>
+        <!-- Navbar at the top of the page -->
+        <nav class="navBar">
+             <!-- Logo -->
+            <img class="logo" src="../sources/images/ME_logo2.png" alt="logo">
+            <ul navLinks>
+                <!-- Nav Links to other pages -->
+                <li><a href="../index.html">Home</a></li>
+                <li class="regionLinks"><a href="#">Regions</a>
+                    <!-- Dropdown menu -->
+                    <ul class="regionDropdown hiddenClass">
+                        <li class="regionItem "><a href="../index.html#region1">Africa and Europe</a></li>
+                        <li class="regionItem "><a href="../index.html#region2">Asia and Oceania</a></li>
+                        <li class="regionItem "><a href="../index.html#region3">The Americas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact/Comments</a></li>
+                <li><a href="./saved_items.html">Saved Items</a></li>
+            </ul>  
+        </nav>
+        </header>
+<div class="contactContainer">
+    <!--Contact form-->
+<div class="contactForm">
+    <h3>Contact the author</h3>
+        <form action="#">
+            <br>
+            Name: 
+            <br>
+            <input type="text" name="user_name">
+            <br>
+            Surname:
+            <br>
+            <input type="text" name="user_surname">
+            <br>
+            Email: 
+            <br>
+            <input type="text" name="user_email">
+            <br>
+            Notes: 
+            <br>
+            <textarea rows="10" cols="40" name="user_message" id="userNameForm"></textarea>
+            <br>
+            <br>
+            Subscribe: 
+            <br>
+            <br>
+            <input type="radio" name="subscription"> Never
+            <br>
+            <br>
+            <input type="radio" name="subscription"> Weekly
+            <br>
+            <br>
+            <input type="radio" name="subscription"> Monthly
+            <br>
+            <br>
+            Regions of interest (add all that you are interested in):
+            <br>
+            <br>
+            <input type="checkbox" name="subscribe_africa"> Africa
+            <br>
+            <input type="checkbox" name="subscribe_asia"> Asia
+            <br>
+            <input type="checkbox" name="subscribe_europe"> Europe
+            <br>
+            <input type="checkbox" name="subscribe_north_america"> North America
+            <br>
+            <input type="checkbox" name="subscribe_oceania"> Oceania
+            <br>
+            <input type="checkbox" name="subscribe_other"> Other
+            <br>
+            <input type="checkbox" name="subscribe_south_america"> South America
+            <br>
+            <br>
+            <input type="submit" name="user_submit" value="Submit">
+        </form>
+</div>
+</div>
+<div class="commentFormContainer">    
+    <!-- Comment form -->
+    <div class="commentForm">
+       <h3>Feedback and comments</h3> 
+       <br>
+       <input type="text" name="userName" id="userName" placeholder="Name " required>
+       <br>
+       <br>
+       <textarea rows="10" name="userComment" id="userComment" placeholder="Message"></textarea>
+       <br>
+       <br>
+       <button id="submitCommentBtn">Give Feedback</button>
+    </div>
+</div>
+<!-- Container for displaying saved comments -->
+<div id="displayContainerComments">
+</div>
+<!-- Links to scripts used : Google JQ api and relevant js --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="../contact_comment.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+//link to colours and fonts partial
+@import "../css/colours_and_fonts";
+
+//Styling for container to display saved items
+#displayContainer{
+    text-align: center;
+    color: $blanchedAlmond;
+    font-size: 3vh;
+    overflow: hidden;
+    background-color: $reddishBrown;
+    width: 80vh;
+    height: auto;
+    margin: 5vh auto;
+    padding: 1vh;
+    border: 5px solid $camelTan;
+    border-radius: 25px;
+}
+
+//Styling for saved item "card"
+#savedItemDisplayDiv{
+    text-align: center;
+    background-color: $darkBrown1;
+    width: 80%;
+    height: auto;
+    margin: 2vh auto;
+    padding: 2vh;
+    border: 5px solid $camelTan;
+    border-radius: 25px;
+}
+
+//Stylng for username in comments display
+.userItemNameDisplay{
+    font-size: 2vh;
+    color: $white;
+}
+
+//Stylng for comment in comments display
+.userItemDisplay{
+    font-size: 2vh;
+    color: $lightBlueCyan;
+}

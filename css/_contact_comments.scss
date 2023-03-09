@@ -1,0 +1,86 @@
+//link to colours and fonts partial
+@import "../css/colours_and_fonts";
+
+
+//Styling for contact container
+.contactContainer{
+    background-color: $lightReddishBrown;
+    border: 1px solid $darkBrown1;
+    width:30vh;
+    height:auto; 
+    margin: 5vh auto;
+    padding: 2vh;
+    border: 2px solid $darkBrown2;
+    border-radius: 25px;
+}
+
+//General Styling for contact form
+.contactForm{
+    margin: auto;
+    background-color: $camelTan;
+    width: 23vh;
+    padding: 2vh;
+    border: 2px solid $darkBrown2;
+    border-radius: 25px;
+}
+
+//Styling for container comment form
+.commentFormContainer{
+    display: flex;
+    background-color: $lightReddishBrown;
+    
+    width:49vh;
+    height:40vh;
+    margin: 5vh auto;
+    border: 2px solid $darkBrown2;
+    border-radius: 25px;
+   
+}
+
+//General comment styling
+.commentForm{
+    background-color: $camelTan;
+    width:40vh;
+    padding: 2vh;
+    margin: 2vh auto;
+    border: 2px solid $darkBrown2;
+    border-radius: 25px;
+    position: relative;
+}
+
+.displayContainerComments{
+    margin: auto;
+    width:80vh;
+    height:40vh;
+    margin: 5vh auto;
+}
+
+textarea{
+    width:21vh;
+    resize: none;
+}
+
+#userComment{
+    width: 40vh;
+}
+
+//General styling for "comment card"
+.commentCard{
+    width:40vh;
+    margin: auto;
+    margin-bottom: 5vh;
+    height:15vh;
+    padding: 2vh;
+    border: 2px solid $darkBrown2;
+    border-radius: 25px;
+    background-color: $blanchedAlmond;
+    color: $darkBrown1;
+}
+
+#submitCommentBtn{
+    color: $blanchedAlmond;
+    background-color: $darkBrown2;
+    border-radius:25px;
+    padding: 2px;
+    position: absolute;
+}

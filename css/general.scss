@@ -1,0 +1,291 @@
+//General styling across all pages
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+//IMporting partials
+@import "./contact_comments";
+@import "./saved_items";
+@import "./colours_and_fonts";
+
+
+body{
+    background-image: url(../sources/images/bg.jpg);
+    background-position: fixed;
+    background-size: cover;
+}
+
+//Navigation bar (top) styling
+nav {
+    width: 100%;
+    min-height: 20vh;
+    background-color: $transparentBrownLight;
+    border-radius: 0 0 45px 45px;
+}
+
+nav .logo{
+    position: absolute;
+    float: left;
+    margin-top: -2.5vh;
+    width:20vh;
+    height:20vh;
+    padding-right: 1vh;
+}
+
+nav ul {
+    margin-left: 40vh;
+}
+
+nav ul li {
+    font-size: 30px;
+    display: inline-block;
+    margin: 6vh auto 2vh auto;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li ul {
+    margin: 1vh auto 1vh auto;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 3vh 4vh 0vh 0vh;
+    color: $white
+}
+
+//Hover effect of Navbar Items
+nav ul li a:hover{
+    color:$darkBrown1;
+    text-shadow:
+      0 0 7px $gold,
+      0 0 10px  $gold,
+      0 0 21px $gold,
+      0 0 42px $gold,
+      0 0 82px $gold,
+      0 0 92px $gold,
+      0 0 102px $gold,
+      0 0 151px $gold;
+  }
+
+//Dropdown menu styling
+nav ul li ul{
+    border: 2px solid $darkBrown2;
+    background-image: url(../sources/images/bg.jpg);
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+    position: absolute;
+    width:100%;
+}
+
+nav ul li ul li{
+    margin-top: 0;
+}
+
+nav ul li ul li a{
+    text-align: center;
+    font-size: 16px;
+    height:2vh;
+    width: 12vh;
+    padding: 1vh 1vh 0 1vh;
+    color: $white;
+}
+
+//Styling for introductory section on main page
+#introSection{
+    color: $blanchedAlmond;
+    height:auto;
+    width:80%;
+    margin: 3vh auto;
+    padding: 20px;
+    background-color: 	$lightReddishBrown;
+    text-align: center;
+    box-shadow: 20px 21px 6px -8px $shadowBlack;
+    border-radius: 15px;
+    border: 2px solid $reddishBrown;
+}
+
+//Styling for about section on main page
+#aboutBox{
+    color: $darkBrown2;
+    background-color: $camelTan;
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+    margin: 2vh auto;
+    padding: 20px;
+    border: 2px solid $reddishBrown;
+}
+
+//General styling for all region sections and tables
+.regionTitles{
+    background-color:	$reddishBrown;
+    border: 2px solid $darkBrown2;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto auto  50px auto;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 20px 21px 6px -8px $shadowBlack;
+}
+
+.regionContainers{
+    height:auto;
+    width:80%;
+    margin: 5vh auto;
+    padding: 1vh 0 1vh 0 ;
+    background-color: $lightBrown1;
+    border: 2px solid $reddishBrown;
+    border-radius: 15px;
+    box-shadow: (20px 21px 6px -8px $shadowBlack);
+}
+.regionSubContainers{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    margin:  0vh auto;
+    height:auto;
+    width:80%;
+    background-color: $transparentWhite;
+}
+
+.regionCards{
+    display:block;
+    object-fit: contain;
+    margin: 1vh 5vh 5vh 5vh;
+    min-height: 30vh;
+    width: 60%;
+    background-color:  $camelTan;
+    border: 2px solid $reddishBrown;
+    border-radius: 15px;
+    box-shadow: 20px 21px 6px -8px$shadowBlack;}
+    
+//Styling for images
+.cardImagesContainer{
+    position: relative;
+    overflow: hidden;
+    margin: 1vh auto 1vh auto;
+    justify-content: center;
+    color: $black;
+    width:95%;
+    height:auto;
+}
+
+.cardImages{
+    border: 2px solid $reddishBrown;
+    border-radius: 15px;
+    object-fit: cover;
+    width: 98%;
+    height: 35vh;
+}
+
+//Styling for Like and Save icons
+.likeIcon{
+    color:$white;
+    position: absolute;
+    margin: 1vh 0 0 1vh;
+    font-size: 16px;
+}
+
+.likeIcon:hover{
+    color: $pinkishRed;
+    cursor: pointer;
+}
+
+.likeIconClicked{
+    color:$darkRed;
+}
+
+.saveIcon{
+        color:$white;
+        position: absolute;
+        margin: 3vh 0 0 1vh;
+        font-size: 16px;
+}
+
+.saveIcon:hover{
+    color: $lightBlueCyan;
+    cursor: pointer;
+}
+
+.saveIconClicked{
+    color: #1a1ac5;
+}
+
+
+//Styling for text underneath images
+.imageCaptionContainer{
+    padding: 7px;
+    background-color:$burlywood;
+    border-radius: 15px;
+    border: 2px solid $reddishBrown;
+}
+
+//General Styling for tables
+.regionTableContainer{
+    overflow: hidden;
+    display: flexbox;
+    align-items: center;
+    margin: auto;
+    height:auto;
+    width:74%;
+    background-color: $reddishBrown;
+    margin-bottom: 15vh;
+    padding: 3vh;
+    box-shadow: 20px 21px 6px -8px $shadowBlack;
+    border: 2px solid$darkBrown1;
+    border-radius: 15px;
+    
+}
+
+.contentTable, th, td{
+    text-align: center;
+    color:$darkBrown1;
+    padding: 4px;
+    border: 2px solid $darkBrown1;
+    background-color:$burlywood;
+}
+
+//Hover effect over tables
+th:hover, td:hover{
+    color: $darkBrown1;
+    text-shadow:
+      0 0 7px $gold,
+      0 0 10px  $gold,
+      0 0 21px $gold,
+      0 0 42px $gold,
+      0 0 82px $gold,
+      0 0 92px $gold,
+      0 0 102px $gold,
+      0 0 151px $gold,
+  }
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+//Hidden class to be applied to items that require to be hidden
+.hiddenClass{
+    display: none;
+}
+
+//Styling for rotation animation of logo
+.rotate {
+    animation: rotation 7s infinite linear;
+}
+  
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(359deg);
+    }
+}
